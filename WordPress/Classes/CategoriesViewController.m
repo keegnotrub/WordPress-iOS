@@ -31,6 +31,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.title = NSLocalizedString(@"Categories", nil);
+
     [WPStyleGuide configureColorsForView:self.view andTableView:self.tableView];
     self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero]; // Hide extra cell separators.
     
